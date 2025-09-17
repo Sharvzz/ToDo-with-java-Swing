@@ -104,8 +104,10 @@ public class ToDoAppGUI  extends JFrame {
         filterPanel.add(filterComboBox);
 
         JPanel northJPanel = new JPanel(new BorderLayout());
-        
-        add(inputPanel, BorderLayout.NORTH);
+        northJPanel.add(inputPanel, BorderLayout.CENTER);
+        northJPanel.add(buttonPanel, BorderLayout.SOUTH);
+        northJPanel.add(filterPanel, BorderLayout.NORTH);
+        add(northJPanel, BorderLayout.NORTH);
 
         
 
